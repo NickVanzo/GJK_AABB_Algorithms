@@ -1,0 +1,24 @@
+# ninja log v5
+1530	1564	1701379181944691000	lib/libgtest.a	a077bb15124b83bc
+8	631	1701379825709988968	Google_tests/CMakeFiles/Google_Tests_run.dir/AABBTest.cpp.o	e5840b7af4050175
+631	780	1701379825859905245	Google_tests/Google_Tests_run	a286d9bfe221ec27
+4	349	1701378106054039766	CMakeFiles/C__TestingGround.dir/main.cpp.o	b38ac223f0661626
+220	373	1701378161712001781	C__TestingGround	cbef45bbeb740152
+7	337	1701379632897608449	classes/CMakeFiles/TestingAlgos.dir/AABB.cpp.o	2225c5553661336e
+337	359	1701379632924541000	classes/libTestingAlgos.a	e99158a7205cb127
+2	589	1701379180965281232	Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	4600c97b382f6682
+5	289	1701378105993600490	classes/CMakeFiles/TestingAlgos.dir/BoxColliderComponent.cpp.o	99ef7da92911616a
+0	132	1701423359322156614	build.ninja	2040a7c2f4b2e300
+5	199	1701378161539775241	classes/CMakeFiles/TestingAlgos.dir/Component.cpp.o	93dbe4da4c5514f9
+2	1530	1701379181904314002	Google_tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	f01548548539e178
+1564	1578	1701379181959623000	lib/libgtest_main.a	c5c8add6d0f4e50f
+19	286	1701423400373929245	classes/CMakeFiles/TestingAlgos.dir/Component.cpp.o	4e390eeeb7d6d9db
+19	447	1701423400535173567	classes/CMakeFiles/TestingAlgos.dir/BoxColliderComponent.cpp.o	f245f3398d6d9a9c
+18	468	1701423400555635070	classes/CMakeFiles/TestingAlgos.dir/AABB.cpp.o	62dc6a57959fd2b0
+469	549	1701423400641161000	classes/libTestingAlgos.a	e99158a7205cb127
+19	738	1701423400825702336	Google_tests/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o	d7d894366a4b7ee2
+19	787	1701423400874104319	Google_tests/CMakeFiles/Google_Tests_run.dir/AABBTest.cpp.o	f940eaeccb27c952
+19	1707	1701423401783372208	Google_tests/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o	1ffb56614f1b6c9c
+1708	1743	1701423401835049000	lib/libgtest.a	a077bb15124b83bc
+1743	1758	1701423401850292000	lib/libgtest_main.a	c5c8add6d0f4e50f
+1758	1811	1701423401900708383	Google_tests/Google_Tests_run	a286d9bfe221ec27
