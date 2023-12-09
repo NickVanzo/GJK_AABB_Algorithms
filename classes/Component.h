@@ -2,8 +2,9 @@
 // Created by Nicolò Vanzo on 30/11/23.
 //
 
-#include "glm/vec2.hpp"
 #pragma once
+
+#include "glm/glm/vec2.hpp"
 
 class Component {
 public:

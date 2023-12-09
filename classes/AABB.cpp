@@ -19,11 +19,11 @@ bool ConcreteStrategyAABB::AABB::checkCollision(std::shared_ptr<Component> bc1, 
         auto bc2Width = bc2BoxCollider->getHorizontalOffset() * 2;
         auto bc1Height = bc1BoxCollider->getVerticalOffset() * 2;
         auto bc2Height = bc2BoxCollider->getVerticalOffset() * 2;
-
-        return (bc1Center.x < bc2Center.x + bc2Width) &&
-               (bc1Center.x + bc1Width > bc2Center.x) &&
-               (bc1Center.y < bc2Center.y + bc2Height) &&
-               (bc1Height + bc1Center.y > bc2Center.y);
+        bool collisionDetected =(bc1Center.x < bc2Center.x + bc2Width) &&
+                                (bc1Center.x + bc1Width > bc2Center.x) &&
+                                (bc1Center.y < bc2Center.y + bc2Height) &&
+                                (bc1Height + bc1Center.y > bc2Center.y);
+        return collisionDetected;
     }
 
     return false;

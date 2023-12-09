@@ -178,6 +178,22 @@ build classes/CMakeFiles/TestingAlgos.dir/Component.cpp.o: CXX_COMPILER__Testing
   TARGET_COMPILE_PDB = classes/CMakeFiles/TestingAlgos.dir/TestingAlgos.pdb
   TARGET_PDB = classes/libTestingAlgos.pdb
 
+build classes/CMakeFiles/TestingAlgos.dir/FishColliderComponent.cpp.o: CXX_COMPILER__TestingAlgos_unscanned_Debug /Users/nicolovanzo/Documents/ITU/GJK_AABB_Algorithms/classes/FishColliderComponent.cpp || cmake_object_order_depends_target_TestingAlgos
+  DEP_FILE = classes/CMakeFiles/TestingAlgos.dir/FishColliderComponent.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = classes/CMakeFiles/TestingAlgos.dir
+  OBJECT_FILE_DIR = classes/CMakeFiles/TestingAlgos.dir
+  TARGET_COMPILE_PDB = classes/CMakeFiles/TestingAlgos.dir/TestingAlgos.pdb
+  TARGET_PDB = classes/libTestingAlgos.pdb
+
+build classes/CMakeFiles/TestingAlgos.dir/GJK.cpp.o: CXX_COMPILER__TestingAlgos_unscanned_Debug /Users/nicolovanzo/Documents/ITU/GJK_AABB_Algorithms/classes/GJK.cpp || cmake_object_order_depends_target_TestingAlgos
+  DEP_FILE = classes/CMakeFiles/TestingAlgos.dir/GJK.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  OBJECT_DIR = classes/CMakeFiles/TestingAlgos.dir
+  OBJECT_FILE_DIR = classes/CMakeFiles/TestingAlgos.dir
+  TARGET_COMPILE_PDB = classes/CMakeFiles/TestingAlgos.dir/TestingAlgos.pdb
+  TARGET_PDB = classes/libTestingAlgos.pdb
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target TestingAlgos
@@ -186,7 +202,7 @@ build classes/CMakeFiles/TestingAlgos.dir/Component.cpp.o: CXX_COMPILER__Testing
 #############################################
 # Link the static library classes/libTestingAlgos.a
 
-build classes/libTestingAlgos.a: CXX_STATIC_LIBRARY_LINKER__TestingAlgos_Debug classes/CMakeFiles/TestingAlgos.dir/AABB.cpp.o classes/CMakeFiles/TestingAlgos.dir/BoxColliderComponent.cpp.o classes/CMakeFiles/TestingAlgos.dir/Component.cpp.o
+build classes/libTestingAlgos.a: CXX_STATIC_LIBRARY_LINKER__TestingAlgos_Debug classes/CMakeFiles/TestingAlgos.dir/AABB.cpp.o classes/CMakeFiles/TestingAlgos.dir/BoxColliderComponent.cpp.o classes/CMakeFiles/TestingAlgos.dir/Component.cpp.o classes/CMakeFiles/TestingAlgos.dir/FishColliderComponent.cpp.o classes/CMakeFiles/TestingAlgos.dir/GJK.cpp.o
   ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = classes/CMakeFiles/TestingAlgos.dir
@@ -284,6 +300,15 @@ build Google_tests/CMakeFiles/Google_Tests_run.dir/AABBTest.cpp.o: CXX_COMPILER_
   TARGET_COMPILE_PDB = Google_tests/CMakeFiles/Google_Tests_run.dir/
   TARGET_PDB = Google_tests/Google_Tests_run.pdb
 
+build Google_tests/CMakeFiles/Google_Tests_run.dir/GJKTest.cpp.o: CXX_COMPILER__Google_Tests_run_unscanned_Debug /Users/nicolovanzo/Documents/ITU/GJK_AABB_Algorithms/Google_tests/GJKTest.cpp || cmake_object_order_depends_target_Google_Tests_run
+  DEP_FILE = Google_tests/CMakeFiles/Google_Tests_run.dir/GJKTest.cpp.o.d
+  FLAGS = -g -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk -fcolor-diagnostics
+  INCLUDES = -isystem /Users/nicolovanzo/Documents/ITU/GJK_AABB_Algorithms/Google_tests/lib/googletest/include -isystem /Users/nicolovanzo/Documents/ITU/GJK_AABB_Algorithms/Google_tests/lib/googletest
+  OBJECT_DIR = Google_tests/CMakeFiles/Google_Tests_run.dir
+  OBJECT_FILE_DIR = Google_tests/CMakeFiles/Google_Tests_run.dir
+  TARGET_COMPILE_PDB = Google_tests/CMakeFiles/Google_Tests_run.dir/
+  TARGET_PDB = Google_tests/Google_Tests_run.pdb
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Google_Tests_run
@@ -292,7 +317,7 @@ build Google_tests/CMakeFiles/Google_Tests_run.dir/AABBTest.cpp.o: CXX_COMPILER_
 #############################################
 # Link the executable Google_tests/Google_Tests_run
 
-build Google_tests/Google_Tests_run: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug Google_tests/CMakeFiles/Google_Tests_run.dir/AABBTest.cpp.o | classes/libTestingAlgos.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || classes/libTestingAlgos.a lib/libgtest.a lib/libgtest_main.a
+build Google_tests/Google_Tests_run: CXX_EXECUTABLE_LINKER__Google_Tests_run_Debug Google_tests/CMakeFiles/Google_Tests_run.dir/AABBTest.cpp.o Google_tests/CMakeFiles/Google_Tests_run.dir/GJKTest.cpp.o | classes/libTestingAlgos.a lib/libgtest.a lib/libgtest_main.a lib/libgtest.a || classes/libTestingAlgos.a lib/libgtest.a lib/libgtest_main.a
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk
   LINK_LIBRARIES = classes/libTestingAlgos.a  lib/libgtest.a  lib/libgtest_main.a  lib/libgtest.a
   OBJECT_DIR = Google_tests/CMakeFiles/Google_Tests_run.dir

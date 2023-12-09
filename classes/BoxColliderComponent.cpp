@@ -11,3 +11,9 @@ int BoxColliderComponent::getHorizontalOffset() {
 int BoxColliderComponent::getVerticalOffset() {
     return verticalOffset;
 }
+void BoxColliderComponent::setHorizontal(int _v) {
+    horizontalOffset = _v;
+}
+void BoxColliderComponent::setVertical(int _v) {
+    verticalOffset = _v;
+}

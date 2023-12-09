@@ -3,7 +3,6 @@
 //
 
 #pragma once
-#include "glm/vec2.hpp"
 #include "string"
 #include "Component.h"
 class BoxColliderComponent: public Component {
@@ -12,6 +11,8 @@ public:
     int verticalOffset = 1;
     int getHorizontalOffset();
     int getVerticalOffset();
+    void setHorizontal(int);
+    void setVertical(int);
 };
 
 
